@@ -1,0 +1,36 @@
+
+                                      CodeAnalysis - Version 1.8
+    ==============================================================================================
+     Tue Mar  5 22:36:58 2019
+     Path: "C:\Users\Omkar\source\repos\Project 2\loader"
+     Args: *.h, *.cpp, *.cs, /v, /m, /r, /f, /p
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      17
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+           regexMatching.h       class                      regexMatching      51      15      13
+           regexMatching.h    function                      regexMatching      67       2       1
+           regexMatching.h    function                     ~regexMatching      71       2       1
+           regexMatching.h    function                    checkParseError      76      14       2
+           regexMatching.h    function                       ProcessFiles      92      22       3
+           regexMatching.h    function                         MatchFiles     116      26       5
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+         regexMatching.cpp    function                               main      16      16       3
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     3 dirs
+   processed     2 files

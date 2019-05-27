@@ -1,0 +1,39 @@
+
+                                      CodeAnalysis - Version 1.8
+    ==============================================================================================
+     Tue Mar  5 22:35:37 2019
+     Path: "C:\Users\Omkar\source\repos\Project 2\dependencyTable"
+     Args: *.h, *.cpp, *.cs, /v, /m, /r, /f, /p
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      21
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+              dependency.h       class                         dependency      54      17      19
+              dependency.h    function                         dependency      75       2       1
+              dependency.h    function                        ~dependency      79       2       1
+              dependency.h    function                      addDependency      83      12       4
+              dependency.h    function                             insert      91       1       1
+              dependency.h    function                     findDependency      97      23       4
+              dependency.h    function                 isExistsDependency     121       8       2
+              dependency.h    function                          DTdisplay     131      12       3
+              dependency.h    function                       dependencies     145      11       3
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+            dependency.cpp    function                               main      15      17       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     3 dirs
+   processed     2 files

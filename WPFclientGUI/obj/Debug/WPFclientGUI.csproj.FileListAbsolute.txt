@@ -1,0 +1,36 @@
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\bin\Debug\WPFclientGUI.exe.config
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\bin\Debug\WPFclientGUI.exe
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\bin\Debug\WPFclientGUI.pdb
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI.csprojAssemblyReference.cache
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\App.g.cs
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI_MarkupCompile.cache
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI_MarkupCompile.lref
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\MainWindow.baml
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI.g.resources
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI.Properties.Resources.resources
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI.csproj.GenerateResource.cache
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI.csproj.CoreCompileInputs.cache
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI.exe
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI.pdb
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\bin\Debug\Translator.dll
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\bin\Debug\Translator.pdb
+C:\Users\Omkar\source\repos\Project 2\WPFclientGUI\obj\Debug\WPFclientGUI.csproj.CopyComplete
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\bin\Debug\WPFclientGUI.exe.config
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\bin\Debug\WPFclientGUI.exe
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\bin\Debug\WPFclientGUI.pdb
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\bin\Debug\Translater.dll
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\bin\Debug\Translater.pdb
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.csprojAssemblyReference.cache
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\App.g.cs
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI_MarkupCompile.cache
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI_MarkupCompile.lref
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\MainWindow.baml
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.g.resources
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.Properties.Resources.resources
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.csproj.GenerateResource.cache
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.csproj.CoreCompileInputs.cache
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.csproj.CopyComplete
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.exe
+C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.pdb

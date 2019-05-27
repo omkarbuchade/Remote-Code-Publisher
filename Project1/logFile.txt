@@ -1,0 +1,33 @@
+
+                                      CodeAnalysis - Version 1.8
+    ==============================================================================================
+     Tue Mar  5 22:37:24 2019
+     Path: "C:\Users\Omkar\source\repos\Project 2\Project1"
+     Args: *.h, *.cpp, *.cs, /v, /m, /r, /f, /p
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1       9
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+               executive.h       class                          executive      32       5       3
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+             executive.cpp    function                          executive      18       2       1
+             executive.cpp    function                         ~executive      22       2       1
+             executive.cpp    function                               main      26      43       5
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     5 dirs
+   processed     2 files

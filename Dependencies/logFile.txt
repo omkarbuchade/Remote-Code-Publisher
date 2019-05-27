@@ -1,0 +1,37 @@
+
+                                      CodeAnalysis - Version 1.8
+    ==============================================================================================
+     Tue Mar  5 22:34:40 2019
+     Path: "C:\Users\Omkar\source\repos\Project 2\Dependencies"
+     Args: *.h, *.cpp, *.cs, /v, /m, /r, /f, /p
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      17
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+          findDependency.h       class                     findDependency      62      16      15
+          findDependency.h    function                     findDependency      79       2       1
+          findDependency.h    function                    ~findDependency      83       2       1
+          findDependency.h    function                            findDep      87      46       3
+          findDependency.h    function                    checkDupliactes     134      18       5
+          findDependency.h    function                      ExecuteParser     154      23       2
+          findDependency.h    function                         myTreeWalk     179      14       2
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+        findDependency.cpp    function                               main      16      19       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     3 dirs
+   processed     2 files

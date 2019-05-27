@@ -1,0 +1,47 @@
+
+                                      CodeAnalysis - Version 1.8
+    ==============================================================================================
+     Tue Mar  5 22:33:34 2019
+     Path: "C:\Users\Omkar\source\repos\Project 2\converter"
+     Args: *.h, *.cpp, *.cs, /v, /m, /r, /f, /p
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      37
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+               converter.h       class                          converter      71      29      35
+               converter.h    function                          converter     102       3       1
+               converter.h    function                         ~converter     107       2       1
+               converter.h    function                           checkDir     111       6       2
+               converter.h    function                         createHTML     119      42       4
+               converter.h    function                          beginHtml     163       8       1
+               converter.h    function                            EndHtml     173       8       1
+               converter.h    function                          titleHtml     183       4       1
+               converter.h    function                        headHtmlEnd     189       8       1
+               converter.h    function                            preHtml     199       3       1
+               converter.h    function                       preCloseHtml     204       3       1
+               converter.h    function                       writeDepHtml     209      18       3
+               converter.h    function                         findMarkov     229      16       3
+               converter.h    function            addSingleLineCommentDiv     247      12       2
+               converter.h    function             addMultiLineCommentDiv     261      24       5
+               converter.h    function                             addDiv     287      24       5
+               converter.h    function                       createButton     313       9       2
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+             converter.cpp    function                               main      18      13       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     5 dirs
+   processed     2 files

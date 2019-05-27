@@ -1,0 +1,145 @@
+﻿<!-- 
+    ///////////////////////////////////////////////////////////////////////
+    // MainWindow.xaml - Client GUI for Source Code Publisher            //
+    // ver 1.1                                                           //
+    // Omkar Buchade, CSE687 - Object Oriented Design, Spring 2019       //
+    ///////////////////////////////////////////////////////////////////////
+    -->
+<Window x:Class="WPFclientGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFclientGUI"
+        mc:Ignorable="d"
+        Title="Source Code Publisher" Height="550" Width="800"
+        Loaded="Window_Loaded"
+        >
+    <!--==========================Grid===============================================-->
+    <Grid>
+        <TabControl Name="TabCtrl">
+            <TabItem Header="Navigation" Name="HeaderTab">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="*"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="*"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+
+                    </Grid.ColumnDefinitions>
+                    <!--==========================row 0===============================================-->
+                    <Label Grid.Row="0" Grid.Column="0" Content="Path:"></Label>
+                    <TextBox Name="PathTextBox" IsReadOnly="True" Grid.Row="0" Height="20"  Grid.ColumnSpan="3" Margin="40,4,0,3.2" />
+                    <Label Grid.Row="0" Grid.Column="4" Content="Sub-Dir:"></Label>
+                    <CheckBox Name="subdirsCheckBox" IsChecked="True"  Grid.Row="0" Grid.Column="5" Margin="0.7,6.5,4,6.5"></CheckBox>
+                    <!--==========================row 1===============================================-->
+                    <Separator Grid.Row="1" Grid.ColumnSpan="6" Margin="4"></Separator>
+                    <!--==========================row 2===============================================-->
+                    <Label Grid.Row="2" Grid.ColumnSpan="4" Content="Directories:"></Label>
+                    <!--==========================row 3==============================================-->
+                    <ListBox  Name="listBoxDir" MouseDoubleClick="DirList_MouseDoubleClick" Grid.Row="3" Grid.ColumnSpan="6" Margin="4"></ListBox>
+                    <!--==========================row 4==============================================-->
+                    <Label Grid.Row="4" Grid.ColumnSpan="4" Content="Files:"></Label>
+                    <!--==========================row 5==============================================-->
+                    <ListBox  Name="listBoxFiles" Grid.Row="5" Grid.ColumnSpan="6" Margin="4"></ListBox>
+                    <!--==========================row 6==============================================-->
+                    <Separator Grid.Row="6" Grid.ColumnSpan="6" Margin="4" ></Separator>
+                    <!--==========================row 7==============================================-->
+                    <Label Grid.Row="7" Grid.Column="0" Content="Patterns:"></Label>
+                    <TextBox Name="PatternTextBox" Grid.Row="7"  Height="20" Grid.ColumnSpan="2" Margin="60,3.8,0.4,4.2"/>
+                    <Label Grid.Row="7" Grid.Column="2" Content="Regex:"/>
+                    <TextBox Name="RegexTextBox" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="4" Height="20"  Margin="46.6,3.8,4.2,4.2"></TextBox>
+                    <!--==========================row 8==============================================-->
+                    <Separator Grid.Row="8" Grid.ColumnSpan="6" Margin="4" ></Separator>
+                    <!--==========================row 9==============================================-->
+                    <Label Grid.Row="9" Grid.Column="0" Content="Download Dir:"></Label>
+                    <TextBox Name="DownloadTextBox" IsReadOnly="True" Grid.Row="9" Grid.Column="1" Height="20" Grid.ColumnSpan="4" Margin="0.2,4,38.2,3.2" TextChanged="DownloadTextBox_TextChanged" ></TextBox>
+                    <Button Name="browseButton" Click="BrowseButton_Click" Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="2" Content="Browse" Margin="19.6,4,4.2,4.2"></Button>
+                    <!--==========================row 10===============================================-->
+                    <Separator Grid.Row="10" Grid.ColumnSpan="6" Margin="4" ></Separator>
+                    <!--==========================row 11===============================================-->
+                    <Button Name="publishButton" Click="PublishButton_Click" Grid.Row="11" Grid.ColumnSpan="6" Content="Publish" Margin="4"></Button>
+                    <!--==========================row 12==============================================-->
+                    <Separator Grid.Row="12" Grid.ColumnSpan="6" Margin="4" ></Separator>
+                    <!--==========================row 13==============================================-->
+                    <StatusBar Grid.Row="13" Grid.ColumnSpan="6"  Margin="4">
+                        <StatusBarItem>
+                            <TextBlock Name="statusBar" Text="Ready" Height="15"></TextBlock>
+                        </StatusBarItem>
+                    </StatusBar>
+                </Grid>
+            </TabItem>
+            <TabItem Name="DisplayTab" Header="Display">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="*"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="*"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+                        <RowDefinition Height ="Auto"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+                    <!--==========================row 0===============================================-->
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Content="Converted Files (Double click to download files)" HorizontalAlignment="Center"></Label>
+                    <!--==========================row 1===============================================-->
+                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Content="All Converted Files" HorizontalAlignment="Center"></Label>
+                    <Label Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Content="Currently Converted Files (matched to regex)" HorizontalAlignment="Center"></Label>
+                    <ListBox Name="ListBoxConvertedFiles" MouseDoubleClick="ListBoxConvertedFiles_MouseDoubleClick" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="3" Margin="4"></ListBox>
+                    <ListBox Name="ListBoxCurrentlyConvertedFiles" MouseDoubleClick="ListBoxCurrentlyConvertedFiles_MouseDoubleClick" Grid.Row="2"  Grid.Column="3" Grid.ColumnSpan="6" Margin="4" ></ListBox>
+                    <!--==========================row 2===============================================-->
+                    <Label Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="6" Content="Downloaded files: (Double click to open file in browser or text editor)"></Label>
+                    <!--==========================row 3===============================================-->
+                    <ListBox Name="ListBoxDownload" MouseDoubleClick="ListBoxDownload_MouseDoubleClick" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="6" Margin="4"></ListBox>
+                    <!--==========================row 4===============================================-->
+                    <Separator Grid.Row="5"  Grid.Column="0" Grid.ColumnSpan="6" ></Separator>
+                    <!--==========================row 5===============================================-->
+                    <Label Grid.Row="6"  Grid.Column="0" Content="Open with: " Margin="5,2,0,0" ></Label>
+                    <CheckBox Name="BrowserCheckBox" IsChecked="True"  Grid.Row="6" Margin="5,8.2,0.2,6.4" Grid.Column="1" Grid.ColumnSpan="1"/>
+                    <Label Grid.Row="6" Grid.Column="1" Content="Browser" Margin="20.2,0.8,13.4,8.4" />
+                    <CheckBox Name="TextEditorCheckBox" IsChecked="False"  Grid.Row="6" Grid.Column="2" Margin="7.4,8.2,0.2,6.4" />
+                    <Label Grid.Row="6"  Grid.Column="2" Content="Text Editor" Margin="20,0.8,0,8.2" Grid.RowSpan="2"  />
+                    <!--==========================row 6===============================================-->
+                    <Separator Grid.Row="7"  Grid.Column="0" Grid.ColumnSpan="6" Margin="4" ></Separator>
+                    <!--==========================row 7==============================================-->
+                    <StatusBar Grid.Row="8"  Grid.Column="0" Grid.ColumnSpan="6"  Margin="4">
+                        <StatusBarItem>
+                            <TextBlock Name="statusBarDisplay" Height="15" ></TextBlock>
+                        </StatusBarItem>
+                    </StatusBar>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
