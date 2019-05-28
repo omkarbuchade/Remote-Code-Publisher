@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\
+C:\Users\Omkar\source\repos\Project4\WPFclientGUI\obj\Debug\
 WPFclientGUI
 none
 false
 DEBUG;TRACE
-C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\App.xaml
+C:\Users\Omkar\source\repos\Project4\WPFclientGUI\App.xaml
 11151548125
 
 5-2017746502
-15-1592859163
+15605979571
 MainWindow.xaml;
 
-False
+True
 

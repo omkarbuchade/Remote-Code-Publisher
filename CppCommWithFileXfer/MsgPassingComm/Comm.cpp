@@ -7,7 +7,7 @@
 #include "Comm.h"
 #include "../Logger/Logger.h"
 #include "../Utilities/Utilities.h"
-#include "../../Cpp11-BlockingQueue/Cpp11-BlockingQueue.h"
+#include "../Cpp11-BlockingQueue/Cpp11-BlockingQueue.h"
 #include <iostream>
 #include <fstream>
 #include <functional>
@@ -31,7 +31,7 @@ Receiver::Receiver(EndPoint ep, const std::string& name) : listener(ep.port), rc
 }
 //----< returns reference to receive queue >-------------------------
 
-Async::BlockingQueue<Message>* Receiver::queue()
+BlockingQueue<Message>* Receiver::queue()
 {
   return &rcvQ;
 }
@@ -177,7 +177,7 @@ class ClientHandler
 public:
   //----< acquire reference to shared rcvQ >-------------------------
 
-  ClientHandler(Async::BlockingQueue<Message>* pQ, const std::string& name = "clientHandler") : pQ_(pQ), clientHandlerName(name)
+  ClientHandler(BlockingQueue<Message>* pQ, const std::string& name = "clientHandler") : pQ_(pQ), clientHandlerName(name)
   {
     StaticLogger<1>::write("\n  -- starting ClientHandler");
   }
@@ -189,7 +189,7 @@ public:
   }
   //----< set BlockingQueue >----------------------------------------
 
-  void setQueue(Async::BlockingQueue<Message>* pQ)
+  void setQueue(BlockingQueue<Message>* pQ)
   {
     pQ_ = pQ;
   }
@@ -285,7 +285,7 @@ public:
     StaticLogger<1>::write("\n  -- terminating ClientHandler thread");
   }
 private:
-  Async::BlockingQueue<Message>* pQ_;
+  BlockingQueue<Message>* pQ_;
   std::string clientHandlerName;
   Socket* pSocket = nullptr;
 };
@@ -294,7 +294,7 @@ Comm::Comm(EndPoint ep, const std::string& name) : rcvr(ep, name), sndr(name), c
 
 void Comm::start()
 {
-  Async::BlockingQueue<Message>* pQ = rcvr.queue();
+  BlockingQueue<Message>* pQ = rcvr.queue();
   ClientHandler* pCh = new ClientHandler(pQ, commName);
   /*
     There is a trivial memory leak here.  

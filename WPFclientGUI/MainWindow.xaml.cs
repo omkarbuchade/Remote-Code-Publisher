@@ -87,7 +87,7 @@ namespace WPFclientGUI
 
             var Ddirectory = "../../../../SaveFiles/";
             Ddirectory = Path.GetFullPath(Ddirectory);
-            RegexTextBox.Text = "[A-D](.*)";
+            RegexTextBox.Text = "[A-F](.*)";
             DownloadTextBox.Text = Ddirectory;
             PatternTextBox.Text = "*.h *.cpp";
 
@@ -99,10 +99,6 @@ namespace WPFclientGUI
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Console.Write("\nRequirement 2: This project uses Windows Presentation Foundation (WPF) for the Client's user display");
-            Console.Write("\nRequirement 3: This project assemble working parts from Projects #1, #2, and #3 into a Client-Server configuration. Unlike conventional Client-Server architectures, the Client need not wait for a reply from the Publisher server for a request before sending additional requests.");
-            Console.Write("\nRequirement 4: This project provide a Graphical User Interface (GUI) for the client that supports navigating remote directories to find a project for conversion, and supports displaying the conversion results in a way that meets Project #3 requirements");
-            Console.Write("\nRequirement 7: This project demonstrates correct operations for two or more concurrent clients.");
             init();
             // start processing messages
             processMessages();
@@ -122,13 +118,11 @@ namespace WPFclientGUI
             msg.remove("path");
             msg.add("path", "../ConvertedPages");
             msg.add("command", "getPrevConvFiles");
-            Console.Write("\nRequirement 5: This project provides message designs appropriate for this application. This message is used to getFiles and directories from a remote directory on the server. ");
             translater.postMessage(msg);
             var retVal = await AutomatedTest();
         }
         private async Task<int> AutomatedTest()
         {
-            Console.Write("\nRequirement 8: This project include an automated test that accepts the server url and remote path to your project directory on its command line, invokes the Code Publisher, through its interface, to convert all the project files matching a pattern that accepts *.h and *.cpp files, and then opens the Client GUI's Display view.");
             await Task.Delay(1);
             MessageBoxResult MsgBoxRes = MessageBox.Show("Do you want to run an automated test?", "Automated Test", MessageBoxButton.YesNo);
             if (MsgBoxRes == MessageBoxResult.No)
@@ -190,8 +184,6 @@ namespace WPFclientGUI
                 msg.remove("path");
                 msg.add("path", "../ConvertedPages");
                 msg.add("command", "getPrevConvFiles");
-                Console.Write("\nRequirement 5: This project provides message designs appropriate for this application. This message is used for sending a message to the server to convert the files matched to regex and pattern in the given directory.");
-                Console.Write("\nRequirement 6: This project support converting source code in the server and, with a separate request.");
                 translater.postMessage(msg);
             }
         }
@@ -501,7 +493,6 @@ namespace WPFclientGUI
             // build message to get files and post it
             msg.remove("command");
             msg.add("command", "getFiles");
-            Console.Write("\nRequirement 5: This project provides message designs appropriate for this application. This message is used to get files and directories in the selected directory.");
             translater.postMessage(msg);
         }
         //----< respond to mouse double-click on converted file name; downloads file to client's machine >----------------

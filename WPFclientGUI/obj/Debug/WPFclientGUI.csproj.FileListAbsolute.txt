@@ -34,3 +34,9 @@ C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.
 C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.csproj.CopyComplete
 C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.exe
 C:\Users\Omkar\source\repos\Project4HelpWPF\WPFclientGUI\obj\Debug\WPFclientGUI.pdb
+C:\Users\Omkar\source\repos\Project4\WPFclientGUI\obj\Debug\WPFclientGUI.csprojAssemblyReference.cache
+C:\Users\Omkar\source\repos\Project4\WPFclientGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Omkar\source\repos\Project4\WPFclientGUI\obj\Debug\App.g.cs
+C:\Users\Omkar\source\repos\Project4\WPFclientGUI\obj\Debug\WPFclientGUI_MarkupCompile.cache
+C:\Users\Omkar\source\repos\Project4\WPFclientGUI\obj\Debug\WPFclientGUI_MarkupCompile.lref
+C:\Users\Omkar\source\repos\Project4\WPFclientGUI\obj\Debug\WPFclientGUI.exe

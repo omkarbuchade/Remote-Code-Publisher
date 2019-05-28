@@ -22,7 +22,6 @@ regexMatching::~regexMatching()
 
 bool regexMatching::checkParseError(int argc, char * argv[])
 {
-	//std::cout << "\n Requirement 4: This is the loader package";
 	Utilities::ProcessCmdLine pcl(argc, argv);
 	Utilities::preface("Command Line: ");
 	pcl.showCmdLine();
@@ -68,7 +67,6 @@ regexMatching::fpath regexMatching::MatchFiles(int argc, char *argv[], regexMatc
 		std::cout << "\nNo regex found";
 		return files;
 	}
-	files_.clear();
 	int flag = 0;
 	for (auto regex : pcl.regexes())
 	{
@@ -81,7 +79,7 @@ regexMatching::fpath regexMatching::MatchFiles(int argc, char *argv[], regexMatc
 			{
 				for (auto item : files_)
 				{
-					if (FileSystem::Path::getName(item) == fname)
+					if (FileSystem::Path::getName(item) == file)
 						flag = 1;
 				}
 				if (flag == 0)

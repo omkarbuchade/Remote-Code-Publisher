@@ -120,7 +120,6 @@ converter::fpath converter::createHTML(fpath files)
 	parserData parsedData;
 	findDependency Depobj;
 	parserTable pt;
-	//std::cout << "\n\n Requirement 4 and 6: This is converter package. Converter supports translating the markup characters into corresponding escape sequence";
 	std::cout << "\nConverting ";
 
 	for (auto file : files)

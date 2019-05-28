@@ -87,7 +87,6 @@ findDependency::~findDependency()
 
 findDependency::fpath findDependency::findDep(fpath files)
 {
-	//std::cout << "\n Requirement 4: This is the dependency package. \n Requirement 7: This package supports insertion, in each analyzed file, links to all the files in the directory tree, on which it depends.";
 	dependency DT;
 	tempVec_ = files;
 	while (!files.empty())

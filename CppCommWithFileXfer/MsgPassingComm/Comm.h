@@ -38,7 +38,7 @@
 */
 
 #include "../Message/Message.h"
-#include "../../Cpp11-BlockingQueue/Cpp11-BlockingQueue.h"
+#include "../Cpp11-BlockingQueue/Cpp11-BlockingQueue.h"
 #include "../Sockets/Sockets.h"
 #include "IComm.h"
 #include <string>
@@ -59,9 +59,9 @@ namespace MsgPassingCommunication
     void start(CallableObject& co);
     void stop();
     Message getMessage();
-    Async::BlockingQueue<Message>* queue();
+    BlockingQueue<Message>* queue();
   private:
-	  Async::BlockingQueue<Message> rcvQ;
+	  BlockingQueue<Message> rcvQ;
     SocketListener listener;
     std::string rcvrName;
   };
@@ -80,7 +80,7 @@ namespace MsgPassingCommunication
     void postMessage(Message msg);
   private:
   	bool sendFile(Message msg);
-	Async::BlockingQueue<Message> sndQ;
+	  BlockingQueue<Message> sndQ;
     SocketConnecter connecter;
     std::thread sendThread;
     EndPoint lastEP;

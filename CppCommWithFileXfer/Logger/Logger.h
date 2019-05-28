@@ -39,7 +39,7 @@
 #include <iostream>
 #include <string>
 #include <thread>
-#include "../../Cpp11-BlockingQueue/Cpp11-BlockingQueue.h"
+#include "Cpp11-BlockingQueue.h"
 
 class Logger
 {
@@ -57,7 +57,7 @@ public:
 private:
   std::thread* _pThr;
   std::ostream* _pOut;
-  Async::BlockingQueue<std::string> _queue;
+  BlockingQueue<std::string> _queue;
   bool _ThreadRunning = false;
 };
 

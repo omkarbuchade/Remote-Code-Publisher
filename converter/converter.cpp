@@ -17,7 +17,7 @@
 #ifdef TEST_CONVERTER // only compile the following when defined
 int main()
 {
-	std::cout << "Requirement 8: This file includes an automated test that demonstrates that this package meets all the functional requirements";
+	std::cout << "This file includes an automated test that demonstrates that this package meets all the functional requirements";
 	using file = std::vector<std::string>;
 	file fname;
 	fname.push_back("../converter/converter.h");
